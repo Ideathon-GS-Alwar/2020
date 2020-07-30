@@ -28,6 +28,9 @@ body {
 	line-height: 1.5;
 	color: #1c1b1b;
 }
+.overlay{
+	margin-left: 13%;
+}
 
 ul {
 	padding: 0;
