@@ -647,7 +647,7 @@ button:focus {
 }
 
 .mu-speakers-slider .slick-next {
-	right: -60px;
+	right: 10px;
 }
 
 .mu-speakers-slider .slick-prev {
