@@ -29,19 +29,11 @@
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     
  
-	<script>$(window).load(function() { 
-$("#status").fadeOut('fast'); 
-$("#loader").delay(50).fadeOut();
-});
-</script>
     
   </head>
-  <body>
+  <body onload="loadFunction()">
     
-	<div id="loader">
-<div id="status"></div>
-</div>
-  	
+  	<div id="loading"></div>
   	<!-- Start Header -->
 	<header id="mu-hero" class="" role="banner">
 		<!-- Start menu  -->
@@ -109,8 +101,7 @@ $("#loader").delay(50).fadeOut();
 							  }, 3000)
 							}
 
-							myLoop();   
-							
+							myLoop();    
 
 						</script> -->
 
@@ -523,7 +514,7 @@ the participants.</p></b>
 							<center><a style="padding-top:20px;" href="https://t.me/girlscriptalwar"><button type="button" class="btn btn-primary btn-lg">Join our Telegram Channel</button></a>
 							<br>
 							
-                            <img class="contact-us-gif" src="assets/images/cu.gif" alt="" width="40%" height="60%">
+                            <img class="contact-us-gif" src="assets/images/cu.gif" alt="" width="40%" height="60%" style="padding-top: 3.5rem;">
 						</div>
 					</div>
 				</div>
@@ -576,6 +567,14 @@ the participants.</p></b>
     <!-- Custom js -->
 	<script type="text/javascript" src="assets/js/custom.js"></script>
 
-    
+    <script>
+		var preloader = document.getElementById("loading");
+
+		function loadFunction(){
+			preloader.style.display = "none";
+		}
+
+	</script>
+				
   </body>
 </html>
